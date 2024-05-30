@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    
+  
+    <script>
+        // 1. 금액이 1200원이면 500원 동전 개수, 거스름돈 구하기.
+        // let money = 1200;
+        // document.write(`500원 동전 개수 : ${parseInt(money/500)}개
+        //     거스름돈 : ${1200%500}원<br>`);
+
+        // let n500 = Math.floor(money/500);   // 실수 -> 정수로 변환
+        // let r500 = money % 500;
+        // document.write(`500원 개수: ${n500}, 거스름돈: ${r500}<br>`);
+
+        // 2. 금액이 1350원이면 500원, 100원 동전개수, 거스름돈 구하기.
+        // let m2 = 1350;
+        // let c500 = Math.floor(m2/500);
+        // let c100 = Math.floor((m2%500)/100);
+        // console.log(`c100 : ${c100}`);
+        // let r00 = Math.floor(m2%500) - (c100*100);
+        // console.log(`r00 : ${r00}`);
+        // document.write(`500원 개수: ${c500}개, 100원 개수: ${c100}개, 거스름돈: ${r00}원`);
+
+        // 3. 금액이 2363원이면 500원, 100원, 50원, 10원 동전개수, 거스름돈 구하기.
+        // let m3 = 2363;
+        // let c500_2 = Math.floor(m3/500);
+        // let rest = m3%500;
+        // let c100_2 = Math.floor(rest/100);
+        // rest %= 100;
+        // let c50 = Math.floor(rest/50);
+        // rest %=50
+        // let c10 = Math.floor(rest/10);
+        // rest %=10;
+
+        // console.log(`c500_2 : ${c500_2}<br>`);   // 변수값을 출력해서 확인(디버깅)
+        // console.log(`c100_2 : ${c100_2}<br>`);
+        // console.log(`c50 : ${c50}<br>`);
+        // console.log(`c10 : ${c10}<br>`);
+        // console.log(`r00_2 : ${rest}<br>`);
+        
+        // document.write(`500원 개수: ${c500_2}개, 100원 개수: ${c100_2}개, 50원 개수: ${c50}개, 10원 개수: ${c10}개, 최종 거스름돈: ${rest}원`);
+
+        // 1. 위의 프로그램에서 금액을 직접 입력받아서 처리하기
+        // let m3 = Number(prompt("돈을 입력하세요")) ;
+        // let c500 = Math.floor(m3/500);
+        // let rest = m3%500;
+        // let c100 = Math.floor(rest/100);
+        // rest %= 100;
+        // let c50 = Math.floor(rest/50);
+        // rest %=50
+        // let c10 = Math.floor(rest/10);
+        // rest %=10;
+
+        // console.log(`c500_2 : ${c500}<br>`);   // 변수값을 출력해서 확인(디버깅)
+        // console.log(`c100_2 : ${c100}<br>`);
+        // console.log(`c50 : ${c50}<br>`);
+        // console.log(`c10 : ${c10}<br>`);
+        // console.log(`r00_2 : ${rest}<br>`);
+        
+        // document.write(`500원 개수: ${c500}개, 100원 개수: ${c100}개, 50원 개수: ${c50}개, 10원 개수: ${c10}개, 최종 거스름돈: ${rest}원`);
+
+        // 2. 이름, 나이, 생년월일, 주소, 이메일주소, 취미를 입력받아 출력.
+        // let name = prompt('이름을 입력하세요');
+        // let age = prompt('나이를 입력하세요');
+        // let birth = prompt('생년월일을 입력하세요');
+        // let addr = prompt('주소를 입력하세요');
+        // let email = prompt('이메일 주소를 입력하세요');
+        // let hobby = prompt('취미를 입력하세요');
+
+        // document.write(`이름: ${name} <br>
+        // 나이: ${age} <br>
+        // 생년월일: ${birth} <br>
+        // 주소: ${addr} <br>
+        // 이메일: ${email} <br>
+        // 취미: ${hobby} <br>`);
+
+
+        // 3. 반지름을 입력받아 원의 면적구하기 (면적 = 반지름 * 반지름 * 3.14)
+        let circle = Number(prompt('반지름을 입력하세요'));
+        let area = circle * circle * 3.14
+        console.log(`${circle}`);
+        document.write(`원의 면적 : ${area}`);
+
+        // 4. 국어, 영어, 수학 점수를 입력받아 총점, 평균을 구하기.
+        // let Kor = Number(prompt('국어 점수를 입력하세요'));
+        // let Eng = Number(prompt('영어 점수를 입력하세요'));
+        // let Mat = Number(prompt('수학 점수를 입력하세요'));
+        // let sum = Kor + Eng + Mat;
+        // let avg = Math.floor(sum/3);
+        // console.log(`${sum}`);
+        // document.write(`합계 : ${sum}<br>평균 : ${avg}`);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
